@@ -1,0 +1,2 @@
+# node-template
+node initializer .
