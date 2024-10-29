@@ -1,7 +1,6 @@
-
 import swaggerJSDoc from 'swagger-jsdoc';
 import swaggerUi from 'swagger-ui-express';
-import {PORT, CONTEXT_PATH, VERSION_ONE} from '../../resources/properties.js';
+import {CONTEXT_PATH, VERSION_ONE, BASE_URL} from '../../resources/properties.js';
 
 
 class Swagger {
@@ -22,7 +21,7 @@ class Swagger {
 
       servers: [
         {
-          url:  `http://localhost:${PORT}`, // Update with your server URL ${CONTEXT_PATH}${VERSION_ONE}
+          url:  BASE_URL, // Update with your server URL ${CONTEXT_PATH}${VERSION_ONE}
         },
       ],
     };
