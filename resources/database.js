@@ -25,6 +25,13 @@ const sequelize = new Sequelize(
      // Maximum time (in ms) that a connection can be idle before being released
   },
 
+  dialectOptions: {
+    ssl: {
+      require: true, // This option ensures SSL is used
+      rejectUnauthorized: false, // This can be set to true in production for additional security
+    },
+  },
+
 }
 
 );
