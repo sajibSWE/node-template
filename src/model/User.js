@@ -5,10 +5,10 @@ import sequelize from '../../resources/database.js';
 class User extends Model {}
  
 User.init({
-    userName: {   // Alias used in the code
+    name: {   // Alias used in the code
         type: DataTypes.STRING,
         allowNull: false,
-        field: 'user_name',  // Maps to 'user_name' column in the database
+        //field: 'user_name',  // Maps to 'user_name' column in the database
     },
     email: {
         type: DataTypes.STRING,
@@ -18,7 +18,7 @@ User.init({
         type: DataTypes.INTEGER,
         allowNull: false,
     },
-    country: {
+    city: {
         type: DataTypes.STRING,
         allowNull: false,
     },
